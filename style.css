@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: aqua;
+.background{
+    background: url(/disney/imgs/background.png) no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.conteudo{
+    position: relative;
+    z-index: 1;
 }
