@@ -3,6 +3,10 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    color: white;
+    text-transform: uppercase;
 }
 
 .background{
@@ -17,4 +21,91 @@
 .conteudo{
     position: relative;
     z-index: 1;
+}
+
+header{
+    display: flex;
+    padding-left: 2rem;
+}
+
+#logo{
+    margin-right: 1rem;
+}
+
+.logo_img {
+    height: 3.5rem;
+    width: 7rem;
+}
+
+#menu{
+    padding: 1rem;
+}
+
+.nav_list{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding-top: .25rem;
+}
+
+.nav_link, .nav_link_hidden, .nav_link_submenu{
+    text-decoration: none;
+}
+
+.nav_link i, .nav_link_hidden i, .nav_link_hidden_desk i{
+    padding-right: 1rem;
+    font-size: .85rem;
+}
+
+.nav_link_hidden_desk{
+    display: none;
+}
+
+.nav_item_submenu {
+    display: none;
+}
+
+.nav_link span, .nav_link_hidden span {
+    position: relative;
+}
+
+.nav_link_hidden span::after, .nav_link span::after {
+    background-color: rgb(255, 255, 255); /* cor da linha */
+    bottom: -0.35rem;   /* distância da linha */
+    content: "";
+    height: .1rem;
+    left: 0;
+    position: absolute;
+    transition: width 0.1s ease-in-out;
+    width: 0%;
+}
+
+.nav_link:hover span::after, .nav_link_hidden:hover span::after {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .nav_item_hidden{
+        display: none;
+    }
+    .nav_link span{
+        display: none;
+    }
+    
+    .nav_link_hidden_desk{
+    display: block;
+    }
+    .nav_item_submenu{
+    display: block;
+    }
+    
+    .nav_link i, .nav_link_hidden i, .nav_link_hidden_desk i{
+    font-size: 1.25rem;
+    }
+
+    .nav_item_submenu{
+    background-color: black;
+    padding: 1rem 0rem;
+}
 }
