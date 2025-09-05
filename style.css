@@ -62,7 +62,20 @@ header{
 }
 
 .nav_item_submenu {
+    background: #141414;
+    border: .1rem solid hsl(0, 0%, 22%);
+    border-radius: .5rem;
     display: none;
+    margin: 0.25rem 0rem;
+    padding: 1rem 8rem 1rem 1rem;
+}
+
+.nav_text_submenu{
+    position: absolute;
+}
+
+.nav_link_submenu i{
+    margin-right: 1.2rem;
 }
 
 .nav_link span, .nav_link_hidden span {
@@ -84,7 +97,6 @@ header{
     width: 100%;
 }
 
-
 @media (max-width: 768px) {
     .nav_item_hidden{
         display: none;
@@ -96,16 +108,13 @@ header{
     .nav_link_hidden_desk{
     display: block;
     }
-    .nav_item_submenu{
-    display: block;
-    }
     
     .nav_link i, .nav_link_hidden i, .nav_link_hidden_desk i{
     font-size: 1.25rem;
     }
 
-    .nav_item_submenu{
-    background-color: black;
-    padding: 1rem 0rem;
-}
+    /* Mostra quando passar o mouse no pai */
+    .nav_item_submenu {
+        display: block;
+    }
 }
