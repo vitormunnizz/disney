@@ -1,0 +1,29 @@
+@import url(menu_header.css);
+@import url(menu_perfil.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    color: white;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+}
+
+.background{
+    background: url(/disney/imgs/background.png) no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.conteudo{
+    position: relative;
+    z-index: 1;
+}

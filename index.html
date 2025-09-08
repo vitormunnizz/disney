@@ -4,84 +4,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="background"></div>
-    <div class="conteudo">
+    <main class="conteudo">
+
         <header>
             <div id="logo">
                 <a href="/"><img class="logo_img" src="imgs/logo.svg" alt="logo disney"></a>
             </div>
             <div id="menu">
                 </nav class="nav_menu">
-                    <ul class="nav_list">
+                    <ul class="menu_list">
                     
-                        <li class="nav_item">
-                            <a href="/" class="nav_link">
+                        <li class="menu_item">
+                            <a href="/" class="menu_link">
                                 <i class="fa-solid fa-house"></i>
-                                <span class="nav_text">Inicio</span>
+                                <span class="menu_text_hidden">Inicio</span>
                             </a>
                         </li>
                         
-                        <li class="nav_item">
-                            <a href="/" class="nav_link">
+                        <li class="menu_item">
+                            <a href="/" class="menu_link">
                                 <i class="fa-solid fa-magnifying-glass"></i>
-                                <span class="nav_text">Pesquisa</span>
+                                <span class="menu_text_hidden">Pesquisa</span>
                             </a>
                         </li>
                         
                         
-                        <li class="nav_item">
-                            <a href="/" class="nav_link">
+                        <li class="menu_item">
+                            <a href="/" class="menu_link">
                                 <i class="fa-solid fa-plus"></i>
-                                <span class="nav_text">Minha Lista</span>
+                                <span class="menu_text_hidden">Minha Lista</span>
                             </a>
                         </li>
                         
-                        <li class="nav_item_hidden">
-                            <a href="/" class="nav_link_hidden">
+                        <li class="menu_item_hidden">
+                            <a href="/" class="menu_link_hidden">
                                 <i class="fa-solid fa-film"></i>
-                                <span class="nav_text">Filmes</span>
+                                <span class="menu_text">Filmes</span>
                             </a>
                         </li>   
                         
-                        <li class="nav_item_hidden">
-                            <a href="/" class="nav_link_hidden">
+                        <li class="menu_item_hidden">
+                            <a href="/" class="menu_link_hidden">
                                 <i class="fa-solid fa-tv"></i>
-                                <span class="nav_text">Séries</span>
+                                <span class="menu_text">Séries</span>
                             </a>
                         </li>
 
-                        <li class="nav_item">
-                            <a href="/" class="nav_link_hidden_desk">
+                        <li class="menu_item">
+                            <a href="/" class="menu_ponts">
                                 <i class="fa-solid fa-ellipsis-vertical"></i>
                             </a>
                             </nav class="nav_submenu">
-                                <ul class="nav_list_submenu" data-navsubmenu>
-                                    <li class="nav_item_submenu">
-                                        <a class="nav_link_submenu" href="/">
+                                <ul class="submenu_list" data-navsubmenu>
+                                    <li class="submenu_item">
+                                        <a class="submenu_link" href="/">
                                             <i class="fa-solid fa-film"></i>
-                                            <span class="nav_text_submenu">Filmes</span>
+                                            <span class="submenu_text">Filmes</span>
                                         </a>
                                     </li>
-                                    <li class="nav_item_submenu">
-                                        <a class="nav_link_submenu" href="/">
+                                    <li class="submenu_item">
+                                        <a class="submenu_link" href="/">
                                             <i class="fa-solid fa-tv"></i>
-                                            <span class="nav_text_submenu">Séries</span>
+                                            <span class="submenu_text">Séries</span>
                                         </a>
                                     </li>
                                 </ul>
-                            </nav> 
-                        </li>                        
+                            </nav>
+                        </li> 
+                    </ul>
+                </nav>                      
+            <div>
+
+            </div>        
+                <nav class="nav_menu_perfil">
+                    <ul class="menu_pefil_list">
                         
-                    </ul>                  
+                        <li class="menu_perfil_item">
+                            <a class="menu_perfil_link">
+                                <span> Vitor</span>
+                                <img src="imgs/avatar.png" alt="avatar de perfil do starwars">
+                            </a>
+                        
+                        <ul class="submenu_pefil_list">
+                        
+                            <li class="submenu_pefil_item">
+                                <a class="submenu_pefil_link">
+                                    <img src="imgs/avatar.png" alt="avatar de perfil do starwars">
+                                    <span> Vitor</span>
+                                </a>
+                            </li>
+                        
+                            <li class="submenu_pefil_conf_item">
+                                <a class="submenu_pefil_conf_link" href="/">Editar Perfis</a>
+                            </li>
+                        
+                            <li class="submenu_pefil_conf_item">
+                                <a class="submenu_pefil_conf_link" href="/">Configurações do Aplicativo</a>
+                            </li>
+                        
+                            <li class="submenu_pefil_conf_item">
+                                    <a class="submenu_pefil_conf_link" href="/">Conta</a>
+                            </li>
+                        
+                            <li class="submenu_pefil_conf_item">
+                                <a class="submenu_pefil_conf_link" href="/">Ajuda</a>
+                            </li>
+                        
+                            <li class="submenu_pefil_conf_item">
+                                <a class="submenu_pefil_conf_link" href="/">Sair</a>
+                            </li>
+                        
+                        </ul>
+                        </li>
+                    </ul>               
                 </nav>                
             </div>
 
+
+
+
+
+
+
+
+
+
+
+
         </header>
-    </div>
+    </main>
 
 
     <script src="script.js"></script>

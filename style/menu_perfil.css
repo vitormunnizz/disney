@@ -1,0 +1,38 @@
+.menu_perfil_item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 1.5rem;
+}
+
+.menu_perfil_link, .submenu_pefil_link {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_perfil_link img{
+    height: 2.5rem;
+}
+
+.link_menu_perfil span, .submenu_pefil_link span{
+    padding-right: 1rem;
+}
+
+.submenu_pefil_list {
+    position: absolute;
+    left: 1;
+}
+
+.submenu_pefil_link{
+    font-size: .5rem;
+}
+
+@media (max-width: 1024px) {
+    
+    .submenu_pefil_link{
+    font-size: .45rem;
+    }
+
+}

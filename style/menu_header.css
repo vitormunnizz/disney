@@ -1,0 +1,88 @@
+header{
+    display: flex;
+    padding-left: 2rem;
+}
+
+#logo{
+    margin-right: 1rem;
+}
+
+.logo_img {
+    height: 3.5rem;
+    width: 7rem;
+}
+
+#menu{
+    padding: 1.2rem;
+}
+
+.menu_list {
+    display: flex;
+    gap: 1.5rem; 
+}
+
+.menu_link i, .menu_link_hidden i, .submenu_link i {
+    padding-right: 1rem;
+}
+
+.menu_ponts{
+    display: none;
+}
+
+.submenu_list {
+    display: none;
+    background: #141414;
+    border: .1rem solid hsl(0, 0%, 22%);
+    border-radius: 10%;
+    padding: 1rem 8rem 0rem 1rem;
+    margin-top: .5rem;
+}
+
+.menu_item:hover .submenu_list {
+    display: block;
+}
+
+.submenu_text {
+    position: absolute;
+}
+
+.submenu_link i{
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.menu_link span, .menu_link_hidden span, .submenu_link span::after {
+    position: relative;
+}
+
+.menu_link span::after, .menu_link_hidden span::after, .submenu_link span::after {
+    background-color: rgb(255, 255, 255); /* cor da linha */
+    bottom: -0.35rem;   /* distância da linha */
+    content: "";
+    height: .1rem;
+    left: 0;
+    position: absolute;
+    transition: width 0.1s ease-in-out;
+    width: 0%;
+}
+
+.menu_link:hover span::after, .menu_link_hidden:hover span::after, .submenu_link:hover span::after {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .menu_item_hidden{
+        display: none;
+    }
+    .menu_link span{
+        display: none;
+    }
+    
+    .menu_ponts{
+    display: block;
+    }
+    
+    i {
+    font-size: 1.25rem;
+    }
+}
