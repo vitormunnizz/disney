@@ -1,4 +1,4 @@
-.menu_perfil_main{
+.menu_perfil_main {
     position: absolute;
     top: 0;
     right: 0;
@@ -56,15 +56,26 @@
     margin-top: 0rem;
 
 }
-.submenu_pefil_conf_link {
-    
+
+.submenu_perfil_conf_link {    
     font-size: .5rem;    
 }
 
-@media (max-width: 1024px) {
-    
-    .submenu_pefil_link{
-    font-size: .45rem;
-    }
+.menu_perfil_link span, .submenu_pefil_link span {
+    position: relative;
+}
 
+.menu_perfil_link span::after, .submenu_pefil_link span::after { 
+    background-color: rgb(255, 255, 255); /* cor da linha */
+    bottom: -0.35rem;   /* distância da linha */
+    content: "";
+    height: .1rem;
+    left: 0;
+    position: absolute;
+    transition: width 0.1s ease-in-out;
+    width: 0%;
+}
+
+.menu_perfil_link:hover span::after, .submenu_pefil_link:hover span::after {
+    width: 100%;
 }
