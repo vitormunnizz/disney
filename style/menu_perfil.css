@@ -1,32 +1,63 @@
-.menu_perfil_item {
+.menu_perfil_main{
     position: absolute;
     top: 0;
     right: 0;
     padding: 0.5rem 1.5rem;
 }
 
+.menu_perfil_hover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2rem 5rem;
+}
+
+.submenu_perfil{
+    margin-right: .75rem;
+}
+
+.submenu_perfil_conf, .submenu_perfil{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 3.5rem;
+    right: 0rem;
+    padding-left: .75rem;
+    padding-bottom: .75rem;
+    background-color: #141414;
+    border: 1px solid #393939;
+    border-radius: .5rem;
+    display: none;
+}
+
+.menu_perfil_hover:hover .submenu_perfil_conf, .menu_perfil_hover:hover .submenu_perfil{
+    display: block;
+}
+
+.nav_menu_perfil img, .nav_submenu_perfil img {
+    height: 2.5rem;
+}
+
+.submenu_pefil_list {
+    margin-top: .5rem;
+    margin-right: 2rem;
+}
+
 .menu_perfil_link, .submenu_pefil_link {
+    margin-bottom: 0.5rem;
     display: flex;
     gap: 1rem;
     align-items: center;
     justify-content: center;
 }
 
-.menu_perfil_link img{
-    height: 2.5rem;
-}
+.submenu_perfil_conf_list {
+    margin-top: 0rem;
 
-.link_menu_perfil span, .submenu_pefil_link span{
-    padding-right: 1rem;
 }
-
-.submenu_pefil_list {
-    position: absolute;
-    left: 1;
-}
-
-.submenu_pefil_link{
-    font-size: .5rem;
+.submenu_pefil_conf_link {
+    
+    font-size: .5rem;    
 }
 
 @media (max-width: 1024px) {

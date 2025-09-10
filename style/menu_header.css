@@ -4,7 +4,7 @@ header{
 }
 
 #logo{
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .logo_img {
@@ -33,7 +33,7 @@ header{
     display: none;
     background: #141414;
     border: .1rem solid hsl(0, 0%, 22%);
-    border-radius: 10%;
+    border-radius: .5rem;
     padding: 1rem 8rem 0rem 1rem;
     margin-top: .5rem;
 }
